@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg: #f1f2f4;
+    --comp-bg: white;
+    --inp-blue: #F0F5FF;
+}
+
+.flex{
+    display: flex;
+}
+
+.align-item{
+    align-items: center;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+ul{
+    list-style: none;
+}
+
+/* generic CSS */
+
+.container{
+    padding: 10px;
+    margin: 0 100px;
+}
+
+header{
+    background-color: var(--comp-bg);
+}
+
+body{
+    background-color: var(--body-bg);
+}
+
+button{
+    height: 5.5vh;
+    padding: 10px;
+    font: larger;
+    /* border: none; */
+    background-color: var(--comp-bg);
+}
+
+/* specific */
+
+.search{
+    width: 40%;
+    height: 5.5vh;
+    border-radius: 9px;
+}
+
+.search input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5.5px;
+    border: none;
+    background-color: var(--inp-blue);
+}
+
+nav{
+    width: 40%;
+}
+
+.dropdown button{
+    padding: 0;
+    border: none;
+}
+.dropdown-menu{
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.559) ;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.subnav{
+    background-color: var(--comp-bg);
+    margin: 10px 10px;
+}
+
+.subnav .item{
+    text-align: center;
+}
+
+.subnav h6{
+    font: larger;
+}
+
+
+.images .container{
+    background-color: var(--comp-bg);
+    margin: 10px 10px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+}
+
+.left{
+   position: absolute;
+   top:40%;
+   left: 0;
+}
+
+.right{
+   position: absolute;
+   right: 100%;
+   top: 40%;
+}
+
+.bestdeals{
+    background-color: var(--comp-bg);
+    height: 40vh;
+    margin: 10px 10px;
+    margin-top: 20px;
+}
+
+.bestdeals h2{
+    text-align: left;
+}
